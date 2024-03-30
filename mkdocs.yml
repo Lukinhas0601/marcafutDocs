@@ -1,0 +1,13 @@
+site_name: MarcafutDocs
+site_url: https://www.marcafut.com.br/
+
+nav:
+  - Home: index.md
+  - Admin:
+    - 'Admin': admin/admin.md
+    - 'Login': admin/login.md
+
+theme: 
+  name: null
+  custom_dir: 'cinder'
+  colorsheme: dracula
