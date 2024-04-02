@@ -134,6 +134,12 @@
                 
                 <li class="third-level"><a href="#web">Web</a></li>
                 <li class="third-level"><a href="#mobile">Mobile</a></li>
+            <li class="second-level"><a href="#testes">Testes</a></li>
+                
+                <li class="third-level"><a href="#jest">Jest</a></li>
+                <li class="third-level"><a href="#cypress">Cypress</a></li>
+            <li class="second-level"><a href="#executando-testes">Executando Testes</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -168,7 +174,35 @@
 <p><strong>App Jogador</strong>: O App Jogador é uma versão mais completa da versão Web para jogadores. Os jogadores podem realizar o cadastro, acessar a localização da arena, acessar as redes sociais da arena, realizar agendamentos e receber notificações nativas, proporcionando uma experiência completa e integrada.</p>
 </li>
 </ul>
-<p>Com esta documentação, esperamos oferecer uma visão completa e acessível do projeto Marcafut, proporcionando uma base sólida para desenvolvedores e equipes envolvidas em seu desenvolvimento e manutenção.</p></div>
+<p>Com esta documentação, esperamos oferecer uma visão completa e acessível do projeto Marcafut, proporcionando uma base sólida para desenvolvedores e equipes envolvidas em seu desenvolvimento e manutenção.</p>
+<h2 id="testes">Testes</h2>
+<p>Nossa abordagem de testes para o projeto Marcafut é abrangente e inclui tanto testes unitários quanto testes de interface do usuário (UI). Utilizamos duas ferramentas principais para nossos testes: Jest e Cypress.</p>
+<h3 id="jest">Jest</h3>
+<p>O Jest é uma estrutura de teste de JavaScript desenvolvida pelo Facebook. Ele é amplamente utilizado para testes unitários em aplicativos React, e é uma escolha popular devido à sua simplicidade e poderosas funcionalidades de assertivas.</p>
+<h4 id="o-que-o-jest-faz">O que o Jest faz:</h4>
+<ul>
+<li>Testes unitários: Jest é ideal para escrever e executar testes unitários em componentes individuais, funções e lógica de negócios.</li>
+<li>Mocking: Jest fornece uma ampla gama de recursos para simular o comportamento de módulos, permitindo testes isolados e independentes.</li>
+<li>Cobertura de código: Jest possui suporte integrado para medir a cobertura de código, ajudando a garantir que todas as partes do código estejam sendo testadas adequadamente.</li>
+</ul>
+<h3 id="cypress">Cypress</h3>
+<p>O Cypress é uma ferramenta de teste de ponta a ponta (end-to-end) desenvolvida para testar aplicativos da web modernos. Ele oferece uma experiência de desenvolvimento de testes fácil de usar e poderosa, permitindo testes interativos e automatizados em ambientes reais de aplicativos da web.</p>
+<h4 id="o-que-o-cypress-faz">O que o Cypress faz:</h4>
+<ul>
+<li>Testes de interface do usuário (UI): Cypress é projetado especificamente para testar a interface do usuário de aplicativos da web, permitindo interações com elementos da página e validação visual.</li>
+<li>Testes de ponta a ponta: Cypress permite simular fluxos de usuário completos, desde ações de navegação até a entrada de dados em formulários e verificações de resultados.</li>
+<li>Facilidade de uso: Cypress oferece uma API intuitiva e uma interface de usuário amigável para escrever, depurar e executar testes de forma eficiente.</li>
+</ul>
+<p>Combinando Jest para testes unitários e Cypress para testes de interface do usuário, garantimos uma cobertura abrangente de nossos produtos, ajudando a garantir a qualidade e a confiabilidade do projeto Marcafut.</p>
+<h2 id="executando-testes">Executando Testes</h2>
+<p>O Jest é a ferramenta padrão para execução de testes em projetos JavaScript/Node.js. Ele automaticamente busca por arquivos de teste com os sufixos <code>.test.js</code>, <code>.spec.js</code>, ou que estão dentro de pastas com o nome <code>__tests__</code> e os executa quando o comando <code>npm test</code> é acionado.</p>
+<p>Para executar os testes do projeto, basta abrir um terminal na raiz do projeto e digitar o seguinte comando:</p>
+<pre><code>npm test
+</code></pre>
+<p>Isso fará com que o Jest procure por todos os arquivos de teste no projeto e execute-os, fornecendo feedback sobre o sucesso ou falha dos testes.</p>
+<blockquote>
+<p>Certifique-se de que todas as dependências necessárias estejam instaladas e que os arquivos de teste estejam corretamente organizados de acordo com as convenções do Jest para garantir que os testes sejam executados com sucesso.</p>
+</blockquote></div>
         
         
     </div>
@@ -273,5 +307,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-03-30 19:56:50.643905+00:00
+Build Date UTC : 2024-04-02 18:08:17.655791+00:00
 -->
