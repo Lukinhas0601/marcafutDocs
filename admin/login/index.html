@@ -123,11 +123,65 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#componente-de-login-basico">Componente de Login Básico</a></li>
+            <li class="second-level"><a href="#dependencias">Dependências</a></li>
+                
+            <li class="second-level"><a href="#props">Props</a></li>
+                
+            <li class="second-level"><a href="#funcionalidades">Funcionalidades</a></li>
+                
+                <li class="third-level"><a href="#basiclayout">BasicLayout</a></li>
+                <li class="third-level"><a href="#coverlayout">CoverLayout</a></li>
+                <li class="third-level"><a href="#footer">Footer</a></li>
+                <li class="third-level"><a href="#testes">Testes</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-</div>
+<h1 id="componente-de-login-basico">Componente de Login Básico</h1>
+<p>O componente <code>Basic</code> é responsável por renderizar um formulário de login básico.</p>
+<h2 id="dependencias">Dependências</h2>
+<ul>
+<li>react-router-dom: para a navegação do link.</li>
+<li>@mui/material: para os componentes de material UI.</li>
+<li>Material Dashboard 2 React: para alguns componentes específicos do Material Dashboard.</li>
+</ul>
+<h2 id="props">Props</h2>
+<ul>
+<li><code>image</code> (string): A imagem de fundo a ser exibida na tela de login.</li>
+</ul>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<ul>
+<li>O componente inclui campos de entrada para nome de usuário e senha.</li>
+<li>Ele oferece a opção de lembrar as credenciais do usuário.</li>
+<li>Possui um botão de login para enviar as informações de login.</li>
+<li>Possui um componente para visualizar ou esconder a senha na hora da digitação.</li>
+</ul>
+<hr />
+<ul>
+<li>No login do administrador (<code>admin</code>), não haverá opção para criar senha ou recuperar senha. Essas funcionalidades podem ser adicionadas posteriormente, se necessário.</li>
+</ul>
+<blockquote>
+<p><strong>Nota</strong> Dentro do diretório <code>authentication</code>, encontramos os seguintes subdiretórios e componentes:</p>
+<h3 id="basiclayout">BasicLayout</h3>
+<p>Este diretório contém o componente <code>index.jsx</code>, que representa o layout básico para a página de login.</p>
+<h3 id="coverlayout">CoverLayout</h3>
+<p>O diretório <code>CoverLayout</code> contém o componente <code>index.js</code>, que define o layout de capa para a página de login.</p>
+<h3 id="footer">Footer</h3>
+<p>Este diretório inclui o componente <code>index.jsx</code>, responsável por exibir o rodapé na página de login.</p>
+</blockquote>
+<h3 id="testes">Testes</h3>
+<ul>
+<li>
+<p>Os testes para o componente de login básico estão localizados em <code>src/layouts/authentication/__tests__/Basic.tests.jsx</code>. Esses testes verificam se o formulário de login é renderizado corretamente com os campos de entrada, o switch de lembrar-me e o botão de login.</p>
+</li>
+<li>
+<p>O teste verifica se o formulário de login é renderizado corretamente com os campos de entrada, o switch de lembrar-me e o botão de login.</p>
+</li>
+<li>Ele é executado usando Jest e @testing-library/react.</li>
+<li>Os elementos essenciais do formulário de login são verificados para garantir sua presença na tela.</li>
+<li>Outras funcionalidades interativas, como interações com o switch de lembrar-me, podem ser adicionadas e documentadas em testes adicionais.</li>
+</ul></div>
         
         
     </div>
